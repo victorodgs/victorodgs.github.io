@@ -1,0 +1,59 @@
+.joke {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+
+  .chuck-photo {
+    max-width: 400px;
+    width: 100%;
+    .chuck-photo--img {
+      max-width: 100%;
+      min-width: 200px;
+    }
+  }
+
+  .joke-data {
+    .joke-category {
+      font-family: 'Kelson Bold';
+      text-transform: uppercase;
+    }
+    .joke-text {
+      flex-basis: 40%;
+      font-size: 1.1rem;
+      font-family: 'Kelson Bold';
+    }
+  }
+
+  .back {
+    align-self: flex-end;
+    font-family: 'Kelson Bold';
+    text-transform: uppercase;
+    color: black;
+    display: block;
+    margin: 15px 30px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .joke {
+    flex-direction: column;
+    justify-content: center;
+
+    .chuck-photo--img {
+      width: 250px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .joke-text {
+    flex-basis: 30%;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .joke-category {
+    text-align: center;
+  }
+}

@@ -4,6 +4,7 @@
   padding: 20px;
   margin: 30px auto 0 auto;
   overflow: hidden;
+  min-height: 400px;
 
   .categories-title {
     text-transform: uppercase;
@@ -13,8 +14,14 @@
   }
 
   .categories-list {
-    .category {
+    a {
+      color: yellow;
+    }
+
+    .category,
+    a {
       box-sizing: border-box;
+      cursor: pointer;
       min-height: 100px;
       display: flex;
       align-items: center;
@@ -27,6 +34,10 @@
       &:hover {
         background: yellow;
         color: black;
+
+        a {
+          color: black;
+        }
       }
 
       .category-icon {

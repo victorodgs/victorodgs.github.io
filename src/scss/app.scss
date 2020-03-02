@@ -59,5 +59,6 @@ body {
 }
 
 // Components
-@import './components/Home.scss';
-@import './components/layout/CategoriesList.scss';
+@import './components/Home';
+@import './components/layout/CategoriesList';
+@import './components/ShowJoke';

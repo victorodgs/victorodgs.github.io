@@ -18,7 +18,7 @@ export const JokesProvider = props => {
   const getRandomJoke = category => {
     (async () => {
       let response = await api.get(`/random?category=${category}`);
-      setCurrentjoke(response.data);
+      setCurrentjoke(response.data.value);
     })();
   };
 

@@ -1,4 +1,5 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext} from 'react';
+import {Link} from 'react-router-dom';
 import {
   FaSpider,
   FaRoute,
@@ -84,7 +85,12 @@ export default props => {
                     break;
                 }
                 return (
-                  <div className="category col-lg-4 col-md-4 col-sm-6" key={i}>
+                  <Link
+                    className="category col-lg-4 col-md-4 col-sm-6"
+                    key={i}
+                    aria-label={`Link to ${el} category joke`}
+                    to={`/joke/${el}`}
+                  >
                     <span
                       className="category-icon"
                       aria-label={`${el} category icon`}
@@ -92,7 +98,7 @@ export default props => {
                       {categoryIcon}
                     </span>
                     <span className="category-name">{el}</span>
-                  </div>
+                  </Link>
                 );
               })
             : false}
