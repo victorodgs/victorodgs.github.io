@@ -11,23 +11,27 @@ export const JokesProvider = props => {
   const getCategories = () => {
     (async () => {
       let response = await api.get('/categories');
-      setCategories(response);
+      setCategories(response.data);
     })();
   };
 
   const getRandomJoke = category => {
     (async () => {
       let response = await api.get(`/random?category=${category}`);
-      setCurrentjoke(response);
+      setCurrentjoke(response.data);
     })();
   };
 
   useEffect(() => {
     getCategories();
-  }, [setCategories]);
+  }, []);
 
   return (
-    <JokesContext.Provider value={[currentJoke, categories]}>
+    <JokesContext.Provider
+      value={{
+        jokesContext: {currentJoke, categories, getCategories, getRandomJoke},
+      }}
+    >
       {props.children}
     </JokesContext.Provider>
   );
