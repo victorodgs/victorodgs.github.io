@@ -1,0 +1,28 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .home-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+
+    .home-logo--image {
+      max-width: 200px;
+      margin: 0 auto;
+    }
+
+    .home-logo--text {
+      font-family: 'Kelson Bold';
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .home-logo--small {
+      text-align: center;
+      margin-top: -10px;
+    }
+  }
+}

@@ -22,6 +22,7 @@
   },
   "_moduleAliases": {
     "components": "src/components",
+    "assets": "src/assets",
     "helpers": "src/helpers",
     "styles": "src/scss",
     "modules": "./node_modules",
