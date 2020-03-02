@@ -1,22 +1,34 @@
-import React, { createContext, useState, useEffect } from "react";
+import React, {createContext, useState, useEffect} from 'react';
 
-import api from "config/api";
+import api from 'config/api';
 
 export const JokesContext = createContext();
 
-export const InvestmentsProvider = props => {
-    const [jokes, setJokes] = useState(null);
+export const JokesProvider = props => {
+  const [categories, setCategories] = useState([]);
+  const [currentJoke, setCurrentjoke] = useState(null);
 
-    useEffect(() => {
-        (async () => {
-            let response = await api.get("/investments/");
-            setJokes(response.data);
-        })();
-    }, [setJokes]);
+  const getCategories = () => {
+    (async () => {
+      let response = await api.get('/categories');
+      setCategories(response);
+    })();
+  };
 
-    return (
-        <JokesContext.Provider value={[jokes, setJokes]}>
-            {props.children}
-        </JokesContext.Provider>
-    );
+  const getRandomJoke = category => {
+    (async () => {
+      let response = await api.get(`/random?category=${category}`);
+      setCurrentjoke(response);
+    })();
+  };
+
+  useEffect(() => {
+    getCategories();
+  }, [setCategories]);
+
+  return (
+    <JokesContext.Provider value={[currentJoke, categories]}>
+      {props.children}
+    </JokesContext.Provider>
+  );
 };
