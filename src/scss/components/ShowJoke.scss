@@ -23,6 +23,14 @@
       font-size: 1.1rem;
       font-family: 'Kelson Bold';
     }
+
+    .newJoke {
+      background: black;
+      color: yellow;
+      text-transform: uppercase;
+      border: 0;
+      padding: 10px;
+    }
   }
 
   .back {
@@ -45,6 +53,11 @@
       display: block;
       margin: 0 auto;
     }
+  }
+
+  .newJoke {
+    display: block;
+    margin: 0 auto;
   }
 
   .joke-text {

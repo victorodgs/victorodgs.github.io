@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^5.6.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "@craco/craco": "^5.6.3",
     "axios": "^0.19.1",
     "bootstrap": "^4.1.1",
     "jquery": "^3.4.1",
@@ -20,25 +20,12 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0"
   },
-  "_moduleAliases": {
-    "components": "src/components",
-    "assets": "src/assets",
-    "helpers": "src/helpers",
-    "styles": "src/scss",
-    "modules": "./node_modules",
-    "config": "src/config",
-    "context": "src/context"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public",
-    "test": "./node_modules/.bin/mocha --require tests/helpers/setup.js tests/specs/**/*.spec.js",
-    "test:tdd": "./node_modules/.bin/mocha --require tests/helpers/setup.js tests/specs/**/*.spec.js -w",
-    "test:coverage": "./node_modules/.bin/nyc --reporter=html --reporter=text ./node_modules/.bin/mocha tests/helpers/setup.js tests/specs/**/*.spec.js",
-    "setup-aliases": "link-module-alias"
+    "test": "react-scripts test",
+    "storybook": "start-storybook -p 9009 -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -61,11 +48,11 @@
     "@storybook/addons": "^5.3.14",
     "@storybook/preset-create-react-app": "^1.5.2",
     "@storybook/react": "^5.3.14",
+    "axios-mock-adapter": "^1.17.0",
+    "babel-register": "^6.26.0",
     "chai": "^3.5.0",
     "enzyme": "^3.0.0",
     "enzyme-adapter-react-16": "^1.0.0",
-    "jsdom": "^9.4.1",
-    "link-module-alias": "^1.0.0",
-    "mocha": "^2.5.3"
+    "jsdom": "^9.4.1"
   }
 }

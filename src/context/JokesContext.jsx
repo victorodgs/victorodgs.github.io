@@ -1,6 +1,6 @@
 import React, {createContext, useState, useEffect} from 'react';
 
-import api from 'config/api';
+import api from '../config/api';
 
 export const JokesContext = createContext();
 
@@ -19,6 +19,8 @@ export const JokesProvider = props => {
     (async () => {
       let response = await api.get(`/random?category=${category}`);
       setCurrentjoke(response.data.value);
+      const laughAudio = document.getElementById('laugh');
+      laughAudio.play();
     })();
   };
 

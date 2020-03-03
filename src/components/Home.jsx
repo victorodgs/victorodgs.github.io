@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Logo from 'assets/images/jokenorris-site-logo.png';
-import CategoriesList from 'components/layout/CategoriesList';
+import Logo from '../assets/images/jokenorris-site-logo.png';
+import CategoriesList from './layout/CategoriesList';
 
 export default props => {
   return (
-    <>
+    <React.Fragment>
       <section className="home">
         <div className="home-logo">
           <img className="home-logo--image" src={Logo} alt="Jokenorris Logo" />
@@ -15,7 +15,7 @@ export default props => {
           </span>
         </div>
       </section>
-      <CategoriesList></CategoriesList>
-    </>
+      <CategoriesList />
+    </React.Fragment>
   );
 };

@@ -2,10 +2,10 @@ import React from 'react';
 import {BrowserRouter} from 'react-router-dom';
 import './App.scss';
 
-import {JokesProvider} from 'context/JokesContext';
+import {JokesProvider} from './context/JokesContext';
 import Routes from './Routes';
 
-function App() {
+function App () {
   return (
     <BrowserRouter>
       <JokesProvider>
