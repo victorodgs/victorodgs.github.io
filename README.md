@@ -1,68 +1,32 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## JOKENORRIS (Feito com carinho para os amigos do GuiaBolso)
 
-## Available Scripts
+Esse é um projeto criado para demonstrar skills com React e Storybook. Siga os passos para ter a aplicação rodando em ambiente local.
 
-In the project directory, you can run:
+**Necessário ter instalado na sua máquina:**
 
-### `yarn start`
+- Node.js 6+
+- Yarn. Usamos Yarn ao invés do NPM, por se integrar melhor ao React.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Clone o repositório e no terminal execute os passos a seguir
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+1 - Baixe as dependências
 
-### `yarn test`
+    yarn install
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2 - "Starte" o servidor :)
 
-### `yarn build`
+       yarn start
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Visitando `http://localhost:3000/` no browser, você irá acessar o Jokenorris!
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+**UI Testing**
+Usamos Storybook para fazer testes de UI na aplicação. Assim, podemos saber como os componentes que sofrem mutação se comportam com diferentes entradas de dados.
+Você pode conferir e escrever novas histórias na pasta `src/stories`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Para acessar o Storybook, utilize o comando**
 
-### `yarn eject`
+    yarn storybook
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Abra o browser no endereço `http://localhost:9009/` e irá acessar uma página como essa
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+![enter image description here](https://i.imgur.com/6MHxQ0A.png)
