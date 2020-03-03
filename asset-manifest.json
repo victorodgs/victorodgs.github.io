@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.933d424c.chunk.css",
+    "main.js": "/static/js/main.39427380.chunk.js",
+    "main.js.map": "/static/js/main.39427380.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3e3168e3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3e3168e3.js.map",
+    "static/js/2.f36c0dc9.chunk.js": "/static/js/2.f36c0dc9.chunk.js",
+    "static/js/2.f36c0dc9.chunk.js.map": "/static/js/2.f36c0dc9.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.9bd8df6320dd37990a469f3306fa29b7.js": "/precache-manifest.9bd8df6320dd37990a469f3306fa29b7.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.933d424c.chunk.css.map": "/static/css/main.933d424c.chunk.css.map",
+    "static/js/2.f36c0dc9.chunk.js.LICENSE.txt": "/static/js/2.f36c0dc9.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/static/media/Kelson_Md.695f7163.otf",
+    "static/media/jokenorris-site-logo.png": "/static/media/jokenorris-site-logo.192ae25c.png",
+    "static/media/jokenorris.jpg": "/static/media/jokenorris.3b874fd2.jpg",
+    "static/media/risada-do-bola.mp3": "/static/media/risada-do-bola.ea8a8e5b.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3e3168e3.js",
+    "static/js/2.f36c0dc9.chunk.js",
+    "static/css/main.933d424c.chunk.css",
+    "static/js/main.39427380.chunk.js"
+  ]
+}
